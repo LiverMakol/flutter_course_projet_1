@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projet_1/contact.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,6 +19,15 @@ class HomePage extends StatelessWidget {
             fontSize: 20,
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Contact()),
+          );
+        },
+        child: Icon(Icons.add),
       ),
       body: SingleChildScrollView(
         child: Column(
