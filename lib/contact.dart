@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:projet_1/tab_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
+import 'package:projet_1/loomi_page_one.dart';
 
 class Contact extends StatefulWidget {
   Contact({Key? key}) : super(key: key);
@@ -135,7 +135,9 @@ class _ContactState extends State<Contact> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => TabPage()),
+                          MaterialPageRoute(
+                            builder: (context) => LoomiPageOne(),
+                          ),
                         );
                       },
                       child: Icon(Icons.arrow_forward_ios),
